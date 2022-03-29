@@ -26,7 +26,7 @@ pacstrap /mnt base linux linux-firmware
 genfstab -U /mnt >> /mnt/etc/fstab
 
 # Copy stage 2
-cp ./arch-install-stage2.sh /mnt/tmp
+cp ./arch-install-stage2.sh /mnt
 
 # Chroot
-arch-chroot /mnt /tmp/arch-install-stage2.sh
+arch-chroot /mnt ./arch-install-stage2.sh
