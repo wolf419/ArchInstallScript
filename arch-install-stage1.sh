@@ -20,7 +20,7 @@ mkdir -p /mnt/boot/efi
 mount /dev/$EFI /mnt/boot/efi
 
 # Install essential packages
-pacstrap /mnt base linux linux-firmware git
+pacstrap /mnt base linux linux-firmware
 
 # Fstab
 genfstab -U /mnt >> /mnt/etc/fstab
