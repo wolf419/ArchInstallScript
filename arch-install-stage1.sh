@@ -1,8 +1,10 @@
 #!/bin/bash
 
-EFI=nvme0n1p1
-SWAP=nvme0n1p2
-LINUX=nvme0n1p3
+DISK=nvme0n1p
+
+EFI=${DISK}1
+SWAP=${DISK}2
+LINUX=${DISK}3
 
 # TODO
 # loadkeys de-latin1
