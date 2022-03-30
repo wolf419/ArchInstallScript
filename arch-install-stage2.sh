@@ -34,10 +34,9 @@ echo "Enter user password:"
 passwd $USER
 
 # Additional packages
+pacman -S base-devel networkmanager vim firefox discord git sudo noto-fonts xorg-server xorg-xinit terminator pulseaudio pavucontrol man-db man-pages bash-completion awesome
 cd /tmp && su $USER -c "git clone https://aur.archlinux.org/yay.git"
 cd yay && su $USER -c "makepkg -si"
-
-pacman -S base-devel networkmanager vim firefox discord git sudo noto-fonts xorg-server xorg-xinit terminator pulseaudio pavucontrol man-db man-pages bash-completion awesome
 su $USER -c "yay -S visual-studio-code-bin"
 
 # Grafics
